@@ -47,7 +47,7 @@
 
 
 
-hr.line1 {
+hr{
   border-top: 1px solid red;
 }
 
@@ -76,3 +76,94 @@ hr.line1 {
  	color: tomato;
  }
 
+
+ .service{
+ 	background: #f7f7f9;
+ 	padding: 50px 0;
+ 	margin-bottom: 50px;
+ }
+ .service p{
+ 	font-size: 0.9rem;
+ }
+.headings{
+ 	margin-bottom: 50px;
+ 
+
+ }
+ .headings h1{
+ 	font-size: 1.6rem;
+ 	font-weight: 600;
+ 	text-transform: uppercase;
+
+ }
+ .names h1{
+ 	color: #2e2e2e;
+ 	font-size: 0.9rem;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ }
+
+ .service-icons{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.servicediv h2{
+ 	font-size: 1.1rem;
+ 	line-height: 1.1;
+ 	font-weight: bold;
+ 	word-spacing: 4px;
+ 	margin: 20px 0 15px 0;
+ }
+
+.sliderheading{
+	color: tomato;
+	font-family: 'Krona One', sans-serif;
+
+}
+
+
+.clients{
+	margin-top: 20px;
+	border: 2px solid tomato;
+	width: 60%px;
+	padding: 30px 0px 30px 0px;
+
+}
+.client-para{
+	width: 50%;
+}
+.client-image{
+	width:100px;
+	height: 100px;
+}
+
+.client-image img{
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+}
+.main-client{
+	padding-top: 40px;
+	background: #f7f7f9; 
+}
+
+.clientflex{
+	display: inline-block;
+}
+.reviewbutton-prev{
+	background-image: url(prev.png);
+
+}
+.reviewbutton-next{
+	background-image: url(next.png);
+
+}
+.client-content{
+	padding-top: 10px;
+}
+
+
+ 
+ 
