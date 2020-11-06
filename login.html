@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+
+
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/
+jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik="crossorigin="anonymous">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+
+    <title>Login</title>
+
+  </head>
+
+
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<div class="container-fluid">
+    <div class="row main-content ">
+      <div class="col-md-4 text-center company__info">
+        <span class="company__logo"><h2><span class="fa fa-star-o fa-3x"></span></h2></span>
+        <h4 class="company_title">BRICK WALL</h4>
+      </div>
+      <div class="col-md-8 col-xs-12 col-sm-12 login_form  ">
+        <div class="container-fluid">
+          <div id="login">
+          
+            <h2 class="text-center my-3">Log In</h2>
+          
+          <div class="row">
+            <form control="" class="form-group" name="login">
+              
+                <input type="text" name="username" id="username" class="form__input" placeholder="Username">
+          
+              
+                <!-- <span class="fa fa-lock"></span> -->
+                <input type="password" name="password" id="password" class="form__input" placeholder="Password">
+              
+        
+                <input type="checkbox" name="remember_me" id="remember_me" class="text-center">
+                <label for="remember_me" class="text-center">Remember Me!</label>
+             
+            <div class="text-center">
+                <input type="submit" value="LOGIN" class="btn">
+              </div>
+             
+            </form>
+          </div>
+       
+            <p>Don't have an account? <a href="#" onclick="toggleSignup()">Register Here</a> 
+          </div>
+
+
+
+
+<div id="signup" >
+          
+            <h2 class="text-center my-3">SIGN UP</h2>
+          
+          <div class="row">
+            <form control="" class="form-group signup" name="signup">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-10 text-left">
+                  <input type="text" name="firstname" id="firstname" class="form__input" placeholder="*First Name">
+                </div>
+                 <div class="col-lg-6 col-md-6 col-sm-10">
+                  <input type="text" name="lastname" id="lastname" class="form__input" placeholder="*Last Name">
+                </div>
+              </div>
+                <input type="text" name="phonenumber" id="phonenumber" class="form__input" placeholder="*Phone Number">
+                <input type="text" name="email" id="email" class="form__input" placeholder="*Email">
+                <input type="password" name="password" id="password" class="form__input" placeholder="*Password">
+                <input type="password" name="password" id="password" class="form__input" placeholder="*Confirm Password">
+        
+                
+               <div class="text-center">
+                <input type="submit" value="SIGN UP" class="btn">
+              </div>
+             
+            </form>
+          </div>
+       
+            
+          </div>
+
+
+   
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+
+
+
+
+
+   
+function toggleSignup(){
+   
+    document.getElementById("login").style.display="none";
+    document.getElementById("signup").style.display="block";
+}
+
+function toggleLogin(){
+ 
+    document.getElementById("signup").style.display="none";
+    document.getElementById("login").style.display="block";
+}
+
+
+
+$(document).ready(function($) {
+        
+        $(".signup").validate({
+                rules: {
+                    firstname: "required",  
+                    lastname: "required", 
+                    phonenumber: "required",                 
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                   
+                 
+                },
+                messages: {
+                    name: "Please enter your Name",                   
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 6 characters long"
+                    },
+                 
+                },
+        errorPlacement: function(error, element) 
+        {
+           
+           
+            { 
+                error.insertAfter( element );
+            }
+         },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+                
+            });
+    });
+
+
+
+  </script>
+</body>
+
+
+
+
+
+
+</body>
+</html>
