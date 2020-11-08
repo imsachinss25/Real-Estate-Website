@@ -10,6 +10,15 @@
 .navbar-brand{
 	color: black;
 }
+.navbar-toggler{
+	border-color: tomato;
+	
+	color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .main{
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(home3.jpg)no-repeat;
 	background-size: 100% 100%;
@@ -77,6 +86,40 @@ hr{
  }
 
 
+ .welcometo p{
+ 	padding: 20px 40px 20px 0px;
+ }
+ .wecometo h1{
+ 	font-weight: bold;
+ }
+
+.welcometo img{
+	object-fit: cover;
+}
+.welcometo button{
+	background-color: white;
+	color: tomato;
+	padding: 10px 30px 10px 30px;
+	margin-top: 10px;
+}
+.welcometo button:hover{
+	background-color: #f7f7f9;
+	color: red;
+}
+
+
+
+
+button:hover{
+	cursor: pointer;
+}
+a:hover{
+	cursor: pointer;
+}
+i{
+	cursor: pointer;
+}
+
  .service{
  	background: #f7f7f9;
  	padding: 50px 0;
@@ -124,6 +167,7 @@ hr{
 }
 
 
+
 .clients{
 	margin-top: 20px;
 	border: 2px solid tomato;
@@ -147,6 +191,7 @@ hr{
 .main-client{
 	padding-top: 40px;
 	background: #f7f7f9; 
+	padding-bottom: 50px;
 }
 
 .clientflex{
@@ -164,6 +209,179 @@ hr{
 	padding-top: 10px;
 }
 
+.dealspara{
+	padding: 0px 80px;
+}
 
- 
- 
+.featuredprop{
+	margin-top: 50px;
+}
+
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+
+.properties{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	background-color: red;
+	padding: 60px 0px;
+}
+
+.properties h2{
+	font-weight: bold;
+}
+
+.profile-card {
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    transition: all linear 0.25s;
+    filter: brightness(0.60);
+}
+
+.profile-card .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card .profile-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.profile-card .profile-price {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card:hover img {
+    filter: brightness(0.20);
+}
+
+.profile-card:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card:hover .profile-price {
+    bottom: 60px;
+}
+
+.profile-card:hover .profile-icons {
+    right: 40px;
+}
+
+
+
+.footer{
+	background-color: #292929;
+	color: white;
+	padding: 35px;
+	margin-top: 70px;
+}
+.footer li{
+	font-size: 13px;
+	padding-top: 10px;
+	list-style-type: none;
+}
+
+
+
+#email {
+    color: white;
+    position: relative;
+    
+}
+
+.footer button{
+  
+   margin-top: 20px;
+   padding: 5px 10px;
+   background-color: tomato;
+   color: white;
+   border: 1px solid tomato;
+   
+
+}
+ .footer input{
+   border: none;
+  background-color: #292929;
+  outline: 0;
+  border-bottom: 1px solid tomato;
+  padding-top: 20px;
+
+     
+
+ }
+
+ .footer h2{
+ 	color: tomato;
+ }
+ .footer i{
+ 	color: tomato;
+ }
+ .fa-star-o{
+ 	color: tomato;
+ }
+  .footer p{
+ 	font-size: 12px;
+ }
+
+
+ input.transparent-input:hover{
+ 	border-bottom: 1px solid tomato;
+ }
+
+.social{
+	padding-top: 30px;
+}
+ .footer i{
+ 	color: #f7f7f9;
+
+ }
+ .footer .fa-linkedin-square,.fa-twitter-square{
+ 	padding-left: 20px;
+ }
