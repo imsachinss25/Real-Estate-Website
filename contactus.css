@@ -10,6 +10,15 @@
 .navbar-brand{
   color: black;
 }
+.navbar-toggler{
+  border-color: tomato;
+  
+  color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 hr{
     border-top: 1px solid red;
 }
@@ -55,19 +64,21 @@ textarea{
   border-bottom: 1px solid tomato;
 }
 
-button{
+.btn{
   transition: all .5s ease;
   color: white;
   background-color: tomato;
   border: 1px solid tomato;
   padding: 5px 10px;
 }
-button:hover{
+.btn:hover{
   background-color: white;
   color:tomato;
 }
 
-
+.error{
+  color: tomato;
+}
 
 .footer{
 	background-color: #292929;
@@ -99,6 +110,10 @@ button:hover{
    
 
 }
+ .footer p{
+  font-size: 12px;
+ }
+ 
  .footer input{
    border: none;
   background-color: #292929;
