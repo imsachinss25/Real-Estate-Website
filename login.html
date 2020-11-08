@@ -62,7 +62,7 @@ jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFY
             <h2 class="text-center my-3">Log In</h2>
           
           <div class="row">
-            <form control="" class="form-group" name="login">
+            <form control="" class="form-group login" name="login">
               
                 <input type="text" name="username" id="username" class="form__input" placeholder="Username">
           
@@ -70,7 +70,7 @@ jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFY
                 <!-- <span class="fa fa-lock"></span> -->
                 <input type="password" name="password" id="password" class="form__input" placeholder="Password">
               
-        
+        <br>
                 <input type="checkbox" name="remember_me" id="remember_me" class="text-center">
                 <label for="remember_me" class="text-center">Remember Me!</label>
              
@@ -102,7 +102,7 @@ jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFY
                 </div>
               </div>
                 <input type="text" name="phonenumber" id="phonenumber" class="form__input" placeholder="*Phone Number">
-                <input type="text" name="email" id="email" class="form__input" placeholder="*Email">
+                <input type="email" name="email" id="email" class="form__input" placeholder="*Email">
                 <input type="password" name="password" id="password" class="form__input" placeholder="*Password">
                 <input type="password" name="password" id="password" class="form__input" placeholder="*Confirm Password">
         
@@ -157,9 +157,14 @@ $(document).ready(function($) {
         
         $(".signup").validate({
                 rules: {
+                  
                     firstname: "required",  
                     lastname: "required", 
-                    phonenumber: "required",                 
+                    phonenumber: "required",
+                    email: {
+                      required: true,
+                      email: true
+                    },              
                     password: {
                         required: true,
                         minlength: 6
@@ -188,6 +193,41 @@ $(document).ready(function($) {
                 }
                 
             });
+
+
+$(".login").validate({
+                rules: {
+                    username: "required",
+                                
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                   
+                 
+                },
+                messages: {
+                    name: "Please enter your Username",                   
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 6 characters long"
+                    },
+                 
+                },
+        errorPlacement: function(error, element) 
+        {
+           
+           
+            { 
+                error.insertAfter( element );
+            }
+         },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+                
+            });
+
     });
 
 
